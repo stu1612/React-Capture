@@ -1,34 +1,41 @@
 import React from 'react';
 // images
 import home1 from '../img/home1.png';
+// styled
+import {
+  StyledAbout,
+  StyledDescription,
+  StyledImage,
+  StyledHide,
+} from '../styles';
 
 const AboutSection = () => {
   return (
-    <div>
-      <div className='description'>
+    <StyledAbout>
+      <StyledDescription>
         <div className='title'>
-          <div className='hide'>
+          <StyledHide>
             <h2>We work to make</h2>
-          </div>
-          <div className='hide'>
+          </StyledHide>
+          <StyledHide>
             <h2>
               your <span>dreams</span> come
             </h2>
-          </div>
-          <div className='hide'>
+          </StyledHide>
+          <StyledHide>
             <h2>true</h2>
-          </div>
+          </StyledHide>
         </div>
         <p>
           Contact us for any photography or videogaphy ideas that you have. We
           have expert professionals ready to hear from you !
         </p>
         <button>Contact Us</button>
-      </div>
-      <div className='image'>
+      </StyledDescription>
+      <StyledImage>
         <img src={home1} alt='home 1' />
-      </div>
-    </div>
+      </StyledImage>
+    </StyledAbout>
   );
 };
 
